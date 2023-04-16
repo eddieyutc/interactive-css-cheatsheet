@@ -1,7 +1,11 @@
 import React from 'react'
 
-export function Configuration() {
-  return <aside style={styles}>Configuration section</aside>
+interface ConfigurationProps {
+  children: React.ReactElement
+}
+
+export function Configuration({ children }: ConfigurationProps) {
+  return <aside style={styles}>{children}</aside>
 }
 
 const styles: React.CSSProperties = {

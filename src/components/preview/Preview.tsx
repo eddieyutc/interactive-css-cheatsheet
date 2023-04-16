@@ -1,7 +1,11 @@
 import React from 'react'
 
-export function Preview() {
-  return <section style={styles}>Preview section</section>
+interface PreviewProps {
+  children: React.ReactNode
+}
+
+export function Preview({ children }: PreviewProps) {
+  return <section style={styles}>{children}</section>
 }
 
 const styles: React.CSSProperties = {
