@@ -10,7 +10,6 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Navbar />
       <main style={styles}>
         <Preview>{children[0]}</Preview>
         <Configuration>{children[1]}</Configuration>

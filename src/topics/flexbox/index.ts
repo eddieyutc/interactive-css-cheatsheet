@@ -1,2 +1,1 @@
-export * from './FlexboxConfiguration'
-export * from './FlexboxPreview'
+export * from './Flexbox'

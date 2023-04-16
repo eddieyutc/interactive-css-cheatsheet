@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
-import { Layout } from '@src/components/layout'
-import { FlexboxConfiguration, FlexboxPreview } from '@src/topics/flexbox'
+import { Flexbox } from '@src/topics/flexbox/Flexbox'
+import { Navbar } from '@src/components/navbar'
 
 function App() {
   return (
     <React.StrictMode>
-      <Layout>
-        <FlexboxPreview />
-        <FlexboxConfiguration />
-      </Layout>
+      <Navbar />
+      <Flexbox />
     </React.StrictMode>
   )
 }
