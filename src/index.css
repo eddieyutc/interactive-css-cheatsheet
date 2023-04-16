@@ -23,16 +23,20 @@ a:hover {
   color: #535bf2;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
 }
 
 h1 {
-  font-size: 3.2em;
+  /* font-size: 3.2em; */
   line-height: 1.1;
 }
 
@@ -66,4 +70,27 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
 }
